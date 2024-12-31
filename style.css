@@ -581,6 +581,7 @@ html, body {
     display: flex;
     flex-direction: column;
     gap: 60px;
+    margin-bottom: 70px;
 }
 
 .col7__block-container {
@@ -622,3 +623,127 @@ html, body {
     font-weight: 700;
     text-align: center;
 }
+
+.footer__footer-col1 {
+    background: #f9f4f0;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+@media (max-width: 1024px) {
+    .inner-container {
+        width: 80%;
+    }
+}
+
+.text__header > h5 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 90px);
+    gap: 0 30px;
+}
+
+@media (max-width: 1024px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.big-input {
+    grid-column: 1/3;
+}
+
+.form__btn-container {
+    grid-column: 1/3;
+}
+
+.text__label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.text-field__input {
+    display: block;
+    width: 100%;
+    background: #ffffffff;
+    padding: 10px 0 10px 10px;
+    border-radius: 30px;
+}
+
+.form__btn {
+    width: 100%;
+    background: #d8b6a0bb;
+    color: #111111;
+    padding: 15px 0;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 1024px) {
+    .form__btn {
+        font-size: 1rem;
+        letter-spacing: 0px;
+        padding: 15px 0;
+    }
+}
+
+.form__btn:hover{
+    background: #d8b6a0;
+    color: #ffffffff;
+}
+
+.footer__address-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+@media (max-width: 700px) {
+    .footer__address-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.address-block1 {
+    flex: 1 1 0%;
+}
+
+.address-block2 {
+    flex: 1 1 0%;
+}
+
+.address-block3 {
+    flex: 1 1 0%;
+}
+
+.footer__address-block > h6 {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.footer__address-block p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
